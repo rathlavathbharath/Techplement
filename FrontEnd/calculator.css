@@ -1,0 +1,79 @@
+/* Set overall font size */
+body {
+    font-size: 16px; /* Adjust as needed */
+}
+
+/* Set styles for heading */
+h1 {
+    text-align: center;
+}
+
+/* Set styles for calculator container */
+#calculator {
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 300px; /* Adjust width as needed */
+    margin: 0 auto; /* Center the calculator */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+/* Set styles for display */
+#display {
+    width: 100%;
+    padding: 10px;
+    font-size: 2rem; /* Adjust font size as needed */
+    text-align: right;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    margin-bottom: 10px; /* Add space between display and buttons */
+}
+
+/* Set styles for calculator buttons */
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    height: 60px; /* Adjust height as needed */
+    border-radius: 10px; /* Make buttons slightly rounded */
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 1.5rem; /* Adjust font size as needed */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+
+button:active {
+    background-color: hsl(0, 0%, 50%);
+}
+
+.operator-btn {
+    background-color: hsl(35, 100%, 55%);
+}
+
+.operator-btn:hover {
+    background-color: hsl(35, 100%, 65%);
+}
+
+.operator-btn:active {
+    background-color: hsl(35, 100%, 75%);
+}
+
+/* Styles for calculation history display */
+#history {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+}
